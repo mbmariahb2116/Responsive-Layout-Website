@@ -3,7 +3,7 @@
 }
 
 body {
-    max-width: 100vh;
+    max-width: 100%;
     background-color: #f9f8f7;
     color: #332205;
     font-family: Arial, Helvetica, sans-serif;
@@ -16,9 +16,9 @@ header {
     flex-direction: column;
     justify-content: flex-start;
     flex-wrap: wrap;
-    align-items: stretch;
-    
+    margin: auto;
 }
+
 
 
 ul {
@@ -29,8 +29,7 @@ ul {
 }
 
 .nav-item1 {
-    
-}
+text-align: center;}
 
 
 .nav-item2, .nav-item3, .nav-item4 {
@@ -64,4 +63,35 @@ p {
     padding: 5px;
     margin: auto;
 
+}
+
+/*@media queries*/
+
+@media screen and (min-width: 768px) {
+
+
+
+    header ul, .nav-item1{
+        display: flex;
+        flex: 3;
+        flex-wrap: wrap;
+    }
+
+    ul li {
+        background-color: none;
+        padding: 10px;
+        
+    }
+
+    body {
+        max-width: 100%;
+    }
+
+    
+
+}
+
+@media screen and (min-width: 1024px) {
+
+    
 }
