@@ -11,9 +11,6 @@ body {
     flex-wrap: wrap;
 }
 
-.container {
-    margin: 10px;
-}
 
 ul {
     list-style: none;
@@ -38,9 +35,9 @@ text-align: center;
     display: block;
 }
 
-.portfolio h3 {
+section h3 {
     padding: 10px;
-   margin: 25px;
+    margin: 25px;
 }
 
 h3, h4 {
@@ -55,12 +52,13 @@ img {
 
 p {
     text-align: center;
+    margin: 30px;
+    padding: 15px;
 }
 
-.portfolio{
+section {
     background-color:white;
     margin: 0;
-    display: block;
 }
 
 footer {
@@ -72,37 +70,31 @@ footer {
 
 @media screen and (min-width: 768px) {
 
-    .main-header,
+    .main-header, .main-nav
+    {
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+
+    .main-header img {
+        flex: 33.33%;
+        padding: 5px;
+    }
+
     .main-nav {
-        display: flex;
-    }
-    
-    
-    /*body {
-      width: 100%;
-      max-width: 1000px;
-      margin: 0 auto;  
-    }
-
-    .container{
-        display: flex;
         flex-direction: column;
-        justify-content: flex-start;
-        flex-wrap: wrap;
-        margin: auto;
+        align-items: center;
     }
-
-    header ul, .nav-item1{
-        display: flex;
-        flex: 3;
-        flex-wrap: wrap;
-    }
-
-    .nav-item2, .nav-item3, .nav-item4 {
-        background-color: none;
+    
+    .main-nav li {
+        background: none;
         padding: 10px;
-        margin: 5px;
-    }*/
+    }
+
+   
+
+    
     
 
 }
